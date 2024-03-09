@@ -4,10 +4,10 @@ import { Img, Text, Heading, Button } from "../../components";
 export const About = () => {
     return (
         <>
-        <div className="h-[1012px] w-[69%] mt-5 relative">
-                  <div className="justify-center h-[995px] w-full left-0 bottom-0 right-0 top-0 m-auto absolute">
+        <div className="h-[1012px] w-[69%] mt-5 relative" id="about">
+                  <div className="justify-center h-[985px] w-full left-0 bottom-0 right-0 top-0 m-auto absolute">
                     
-                  <div className="justify-center h-full w-full left-0 bottom-0 right-0 top-0 m-auto absolute bg-white-A700 rounded-lg " />
+                  <div className="justify-center h-full w-full left-0 bottom-0 right-0 top-0 m-auto absolute bg-white-A700 rounded-lg -ml-2" />
                   <div className="flex flex-row justify-start w-full right-0 top-[4%] m-auto absolute pl-10">
                     <Heading as="h4">About Bitcoin</Heading>
                   </div>
@@ -80,7 +80,7 @@ export const About = () => {
                                       alt="Iconly/Light/Arrow - Right"
                                     />
                                   }
-                                  className="gap-1.5 font-semibold min-w-[132px]"
+                                  className="gap-1.5 tracking-[-0.16px] font-semibold min-w-[136px] transition-transform duration-300 ease-in-out hover:bg-gray-600 hover:text-gray-100"
                                 >
                                   Check Now
                                 </Button>
@@ -111,7 +111,7 @@ export const About = () => {
                                       alt="Iconly/Light/Arrow - Right"
                                     />
                                   }
-                                  className="gap-1.5 font-semibold min-w-[132px]"
+                                  className="gap-1.5 tracking-[-0.16px] font-semibold min-w-[136px] transition-transform duration-300 ease-in-out hover:bg-gray-600 hover:text-gray-100"
                                 >
                                   Check Now
                                 </Button>

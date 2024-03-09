@@ -19,9 +19,9 @@ const coins2 = [
 ];
 export const AlsoLike = () => {
   return (
-    <div className="flex flex-row justify-center w-full">
+    <div className="flex flex-row justify-center w-full" id="alsolike">
             <div className="flex flex-col w-full gap-px p-[25px] bg-white-A700 ">
-              <div className="flex flex-col items-center justify-start w-full mt-4 pb-[30px] gap-5 mx-auto max-w-[1330px] "></div>
+              <div className="flex flex-col items-center justify-start w-full -mt-1 pb-[30px] gap-5 mx-auto max-w-[1330px] "></div>
               <div className="flex flex-row justify-start w-[98%] pl-20" style={{paddingBottom: "30px"}}>
                   <Heading as="h2" className="mt-1 !text-gray-900_01 pl-10">
                     You May Also Like

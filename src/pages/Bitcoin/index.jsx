@@ -37,9 +37,9 @@ export default function BitcoinPage() {
         <title>KoinX</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
-      <div className="flex flex-col items-center justify-start w-full gap-[17px] bg-blue_gray-50_01">
+      <div className="flex flex-col items-center justify-start w-full gap-[17px] bg-blue_gray-50_01" id="bitcoin">
         <Navbar1 />
-        <div className="flex flex-col items-center justify-start w-full gap-14">
+        <div className="flex flex-col items-center justify-start w-full gap-14" >
           <div className="flex flex-col items-start justify-start w-full gap-[17px] max-w-[1328px]">
             <div className="flex flex-row justify-start w-[15%]">
               <div className="flex flex-row justify-start items-center w-[75%] gap-[9px]">
@@ -60,7 +60,7 @@ export default function BitcoinPage() {
               <div className="flex flex-col items-start justify-start w-full">
                 <div className="flex flex-row justify-start items-start w-full gap-5">
                   <div className="flex flex-col items-center justify-start w-[67%] gap-[9px]">
-                    <div className="flex flex-col items-start justify-start w-full pl-[23px] py-[23px] bg-white-A700 rounded-lg">
+                    <div className="flex flex-col items-start justify-start w-[908px] pl-[23px] py-[23px] bg-white-A700 rounded-lg ">
                       <div className="flex flex-row justify-start items-center w-full gap-9">
                         <div className="flex flex-row justify-start w-[19%]">
                           <div className="flex flex-row justify-start w-full">
@@ -110,7 +110,7 @@ export default function BitcoinPage() {
                               <div className="flex flex-row justify-start items-start w-full gap-3 py-[3px]">
                                 <Button
                                   leftIcon={<Img src="images/img_polygon_2.svg" alt="Polygon 2" />}
-                                  className="mb-0.5 gap-2 font-medium min-w-[84px] rounded"
+                                  className="mb-0.5 gap-2 font-medium min-w-[84px] rounded ${bitcoinData.usd_24h_change < 0 ? 'text-red-500 bg-red-100' : 'text-green-500'"
                                 >
                                   {bitcoinData ? `${bitcoinData.usd_24h_change.toFixed(2)}%` : "Loading..."}
                                 </Button>
@@ -131,7 +131,7 @@ export default function BitcoinPage() {
                   <TrendingCoins />
                 </div>
                 <Performance />
-                <Sentiment />
+                <Sentiment/>
                 <About />
                 <Tokenomics />
                 <Team />

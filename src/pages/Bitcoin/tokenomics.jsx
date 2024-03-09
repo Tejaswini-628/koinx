@@ -5,8 +5,8 @@ import { Img, Text, Heading, Button } from "../../components";
 export const Tokenomics = () => {
     return (
         <> 
-          <div className="h-[539px] w-[69%] mt-[3px] relative">
-          <div className="justify-center h-full w-full left-0 bottom-0 right-0 top-0 m-auto absolute bg-white-A700 rounded-lg" />
+          <div className="h-[539px] w-[69%] mt-[3px] relative" id="tochenomics">
+          <div className="justify-center h-full w-full left-0 bottom-0 right-0 top-0 m-auto absolute bg-white-A700 rounded-lg -ml-2" />
                   <div className="flex flex-row justify-start w-full right-0 top-[4%] m-auto absolute pl-10">
                     <Heading as="h4">Tokenomics</Heading>
                   </div>

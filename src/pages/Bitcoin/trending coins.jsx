@@ -21,9 +21,10 @@ export const TrendingCoins = () => {
           setTrendingCoins(top3Coins.map(item => ({
               name: item.item.name,
               symbol: item.item.symbol,
-              percentageChange: item.item.data.price_change_percentage_24h.usd, // Assuming USD change here and fixing to 3 decimal places
+              percentageChange: item.item.data.price_change_percentage_24h.usd,
               icon: item.item.thumb
           })));
+          // item.item.data.price_change_percentage_24h.usd,
       } catch (error) {
           console.error('Error fetching trending coins:', error.message);
       }
@@ -31,7 +32,7 @@ export const TrendingCoins = () => {
   
     return (
         <>
-           <div className="flex flex-col items-center justify-start w-[33%] gap-5">
+           <div className="flex flex-col items-center justify-start w-[38%] gap-5 ml-6">
                     <div className="flex flex-col items-center justify-start w-full gap-[19px] p-[31px] bg-blue-A700_01 rounded-[16px]">
                       <div className="flex flex-col items-center justify-start w-[90%] pb-4 gap-3.5">
                         <Heading as="h6" className="w-[82%] !text-white-A700 text-center !font-bold !leading-10">
@@ -50,7 +51,7 @@ export const TrendingCoins = () => {
                         rightIcon={
                           <Img src="images/img_iconly_light_arrow_right.svg" alt="Iconly/Light/Arrow - Right" />
                         }
-                        className="mb-[18px] gap-2.5 font-semibold min-w-[237px]"
+                        className="mb-[18px] gap-2.5 font-semibold tracking-[-0.16px] min-w-[136px] transition-transform duration-300 ease-in-out transform hover:scale-110"
                       >
                         Get Started for FREE
                         <br />
@@ -73,12 +74,12 @@ export const TrendingCoins = () => {
                                     </Text>
                                 </div>
                                 <Button
-                                    leftIcon={<Img src="images/img_polygon_2.svg" alt="Polygon 2" />}
-                                    className="gap-2 font-medium min-w-[84px] rounded"
+                                    leftIcon={<Img src={coin.percentageChange < 0 ? "images/img_polygon_1.svg" : "images/img_polygon_2.svg"} alt="Polygon Icon" />} // Conditionally change the icon based on the percentage change
+                                    className={`gap-2 font-medium min-w-[84px] rounded ${coin.percentageChange < 0 ? 'text-red-500 bg-red-100' : 'text-green-500'}`}
                                 >
-                                    {coin.percentageChange.toFixed(2)}%
+                                {coin.percentageChange.toFixed(2)}%
                                 </Button>
-                            </div>
+                                </div>
                         ))}
                     </div>
                 </div>

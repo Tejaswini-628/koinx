@@ -31,19 +31,20 @@ export const Navbar1 = () => {
                   <Heading
                     size="s"
                     as="h6"
-                    className="flex justify-center items-center w-[128px] h-[70px] py-[25px] tracking-[-0.16px] bg-white-A700"
+                    className="flex justify-center items-center w-[128px] h-[70px] py-[25px] tracking-[-0.16px] bg-white-A700 "
                   >
                     Resource Center
                   </Heading>
                 </div>
                 <Button
-                  size="lg"
-                  variant="gradient"
-                  color="blue_A400_indigo_A700"
-                  className="tracking-[-0.16px] font-semibold min-w-[136px]"
+                 size="lg"
+                 variant="gradient"
+                 color="blue_A400_indigo_A700"
+                 className="tracking-[-0.16px] font-semibold min-w-[136px] transition-transform duration-300 ease-in-out transform hover:scale-110 "
                 >
-                  Get Started
+                Get Started
                 </Button>
+
               </div>
             </div>
           </div>

@@ -5,8 +5,8 @@ import { Img, Text, Heading, Button } from "../../components";
 export const Team = () =>{
     return (
         <>
-          <div className="h-[776px] w-[69%] mt-5 relative">
-                  <div className="justify-center h-full w-full left-0 bottom-0 right-0 top-0 m-auto absolute bg-white-A700 rounded-lg" />
+          <div className="h-[776px] w-[69%] mt-5 relative" id="team">
+                  <div className="justify-center h-full w-full left-0 bottom-0 right-0 top-0 m-auto absolute bg-white-A700 rounded-lg -ml-2" />
                   <div className="flex flex-row justify-start w-full right-0 top-[3%] pl-10 m-auto absolute">
                     <Heading as="h4" className="mb-2">Team</Heading>
                   </div>

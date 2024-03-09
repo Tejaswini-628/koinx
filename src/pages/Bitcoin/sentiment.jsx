@@ -4,9 +4,9 @@
   export const Sentiment = () => {
       return (
           <>
-            <div className="h-[556px] w-[72%] mt-5 relative">
-                    <div className="justify-center h-[556px] w-[95%] left-0 bottom-0 right-0 top-0 m-auto absolute">
-                      <div className="justify-center h-full w-full left-0 bottom-0 right-0 top-0 m-auto absolute bg-white-A700 rounded-lg mr-5" />
+            <div className="h-[556px] w-[72%] mt-5 relative" id="sentiments">
+                    <div className="justify-center h-[566px] w-[95%] left-0 bottom-0 right-0 top-0 m-auto absolute">
+                      <div className="justify-center h-full w-full left-0 bottom-0 right-0 top-0 m-auto absolute bg-white-A700 rounded-lg -ml-7" />
                       <div className="flex flex-row justify-start w-full right-0 top-[4%] m-auto absolute pl-5">
                         <Heading as="h4">Sentiment</Heading>
                       </div>

@@ -1,57 +1,91 @@
 import React from "react";
-import { Img, Text, Heading, Button } from "../../components";
 
+export const Navbar2 = () => {
 
-export const Navbar2=() => {
-    return(
-        <>
+  const scrollToSentiments = () => {
+    const sentimentsElement = document.getElementById("sentiments"); // Get the Sentiments component element by its id
+    if (sentimentsElement) {
+      sentimentsElement.scrollIntoView({ behavior: "smooth" }); // Scroll to the Sentiments component with smooth behavior
+    }
+  };
 
-<div className="flex flex-row justify-center w-full">
-                      <div className="h-[70px] w-full relative">
-                        <div className="flex flex-col items-start justify-center w-full h-max left-0 bottom-0 right-0 top-0 m-auto absolute">
-                          <div className="h-[48px] w-full border-blue_gray-100 border-b border-solid" />
-                          <Heading
-                            size="s"
-                            as="h5"
-                            className="mt-[-48px] py-3.5 !text-blue-800_01 tracking-[-0.16px] border-blue-A700_01 border-b-[3px] border-solid"
-                          >
-                            Overview
-                          </Heading>
-                        </div>
-                        <div className="flex flex-row justify-center w-max h-full gap-8 left-0 bottom-0 right-0 top-0 m-auto absolute">
-                          <div className="flex flex-row justify-start w-[16%] py-6">
-                            <Text size="2xl" as="p" className="!text-gray-800 tracking-[-0.16px]">
-                              Fundamentals
-                            </Text>
-                          </div>
-                          <div className="flex flex-row justify-start w-[16%] py-[23px]">
-                            <Text size="2xl" as="p" className="mt-0.5 !text-gray-800 tracking-[-0.16px] whitespace-nowrap">
-                              News Insights
-                            </Text>
-                          </div>
-                          <div className="flex flex-row justify-start w-[13%] py-6">
-                            <Text size="2xl" as="p" className="!text-gray-800 tracking-[-0.16px]">
-                              Sentiments
-                            </Text>
-                          </div>
-                          <div className="flex flex-col items-center justify-start w-[7%] py-6">
-                            <Text size="2xl" as="p" className="!text-gray-800 tracking-[-0.16px]">
-                              Team
-                            </Text>
-                          </div>
-                          <div className="flex flex-row justify-start w-[13%] py-6">
-                            <Text size="2xl" as="p" className="!text-gray-800 tracking-[-0.16px]">
-                              Technicals
-                            </Text>
-                          </div>
-                          <div className="flex flex-row justify-start w-[14%] py-6">
-                            <Text size="2xl" as="p" className="!text-gray-800 tracking-[-0.16px]">
-                              Tokenomics
-                            </Text>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-        </>
-    )
-}
+  const scrollToTeam = () => {
+    const sentimentsElement = document.getElementById("team"); // Get the Sentiments component element by its id
+    if (sentimentsElement) {
+      sentimentsElement.scrollIntoView({ behavior: "smooth" }); // Scroll to the Sentiments component with smooth behavior
+    }
+  };
+
+  const scrollToTochenomics = () => {
+    const sentimentsElement = document.getElementById("tochenomics"); // Get the Sentiments component element by its id
+    if (sentimentsElement) {
+      sentimentsElement.scrollIntoView({ behavior: "smooth" }); // Scroll to the Sentiments component with smooth behavior
+    }
+  };
+
+  const scrollToAlsoLike = () => {
+    const sentimentsElement = document.getElementById("alsolike"); // Get the Sentiments component element by its id
+    if (sentimentsElement) {
+      sentimentsElement.scrollIntoView({ behavior: "smooth" }); // Scroll to the Sentiments component with smooth behavior
+    }
+  };
+
+  const scrollToAbout = () => {
+    const sentimentsElement = document.getElementById("about"); // Get the Sentiments component element by its id
+    if (sentimentsElement) {
+      sentimentsElement.scrollIntoView({ behavior: "smooth" }); // Scroll to the Sentiments component with smooth behavior
+    }
+  };
+
+  const scrollToPerformance = () => {
+    const sentimentsElement = document.getElementById("performance"); // Get the Sentiments component element by its id
+    if (sentimentsElement) {
+      sentimentsElement.scrollIntoView({ behavior: "smooth" }); // Scroll to the Sentiments component with smooth behavior
+    }
+  };
+
+  const scrollToBitCoin = () => {
+    const sentimentsElement = document.getElementById("bitcoin"); // Get the Sentiments component element by its id
+    if (sentimentsElement) {
+      sentimentsElement.scrollIntoView({ behavior: "smooth" }); // Scroll to the Sentiments component with smooth behavior
+    }
+  };
+
+  return (
+
+    <nav className="flex flex-row justify-center w-full">
+      <div className="h-[70px] w-full relative">
+        
+        <div className="flex flex-col items-start justify-center w-full h-max left-0 bottom-0 right-0 top-0 m-auto absolute"  >
+          <div className="h-[48px] w-full border-blue_gray-100 border-b border-solid" />
+          
+        </div>
+        <div className="flex flex-row justify-center w-max h-full gap-10 left-0 bottom-0 right-0 top-0 m-auto absolute">
+        <button className="flex flex-row justify-start w-[16%] py-6 focus:outline-none hover:text-blue-800 hover:underline -ml-20" onClick={scrollToBitCoin}>
+            Overview
+          </button>
+          <button className="flex flex-row justify-start w-[16%] py-6 focus:outline-none hover:text-blue-800 hover:underline" onClick={scrollToPerformance}>
+            Performance
+          </button>
+          <button className="flex flex-row justify-start w-[25%] py-[23px] focus:outline-none hover:text-blue-800 hover:underline" onClick={scrollToAbout}>
+            News Insights
+          </button>
+          <button className="flex flex-row justify-start w-[13%] py-6 focus:outline-none hover:text-blue-800 hover:underline" onClick={scrollToSentiments}>
+            Sentiments
+          </button>
+          <button className="flex flex-col items-center justify-start w-[7%] py-6 focus:outline-none hover:text-blue-800 hover:underline" onClick={scrollToTeam}>
+            Team
+          </button>
+          <button className="flex flex-row justify-start w-[13%] py-6 focus:outline-none hover:text-blue-800 hover:underline"  onClick={scrollToAlsoLike}>
+            Trending
+          </button>
+          <button className="flex flex-row justify-start w-[14%] py-6 focus:outline-none hover:text-blue-800 hover:underline" onClick={scrollToTochenomics}>
+            Tokenomics
+          </button>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar2;

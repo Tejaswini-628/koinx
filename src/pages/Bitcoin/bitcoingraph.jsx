@@ -18,7 +18,7 @@ export const Bitcoingraph = () => {
         selectedTabPanelClassName="py-[3px] relative tab-panel--selected"
         style={{ height: "500px" }}
       >
-        <div className="flex flex-row justify-between w-[99%]">
+        <div className="flex flex-row justify-between w-[99%]" >
           <Heading size="s" as="h4" className="mt-px !text-gray-900_06">
             Bitcoin Price Chart (USD)
           </Heading>
