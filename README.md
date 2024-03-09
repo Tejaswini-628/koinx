@@ -12,6 +12,12 @@ Created by Sowmya Tejaswini
 - It uses Tailwind CSS
 - The application is generated in JavaScript.
 
+## Tech Stack
+
+- React
+- Node
+- TailWind
+
 ## Pre-requisites
 
 - git
